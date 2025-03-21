@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <link rel="stylesheet" href="css/mansStils.css">
+        <style>
+            .column {
+  float: left;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        </style>
+ 
+    </head>
+    <body>
+        
+ <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" >
+  
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Mans datorikas portfolio</p>
+  </a>
+   <a href="#grafika" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Vektorgrafika un rakstgrafika</p>
+  </a>
+  <a href="#grupudarbs" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Grupu darbs</p>
+  </a>
+  <a href="#Word" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>MS Word</p>
+  </a>
+  <a href="#excel" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Excel</p>
+  </a>
+</nav>
+        <div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="portfolio">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Mans datorikas portfolio</h1>
+    <p>Laura Romeiko 10.sb</p>
+  </header>
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="grafika">
+    <h2 class="w3-serif-16 w3-text-black">Vektorgrafika un rakstgrafika</h2>
+    <hr style="width:200px" class="dd9df0">
+    <p>Šajā mācību gadā es esmu darbojusies ar dažādām datora programmām, piemēram, Excel,IncScape, un arī esmu iepazinusi jaunu programmu - Gimp. Esmu iemācījusies daudzus rīkus un funkcijas, ko izmantot, lai atvieglotu darbu ar šīm lietotnēm. Šeit ir daļa no maniem paveiktajiem darbiem pa visam datorikas tēmām. </p>
+ 
+    
+           <h3 id="gimp" class="w3-padding-16 w3-text-pink">Iespējas rastrgrafikas lietotnē GIMP</h3>
+            <div class="grid-container">
+        <div>
+            <b><h4 class="w3-padding-16 w3-text-black">Saplēstās bildes zīmējums un vārds</h4></b>
+        </div>
+        <div class="images">
+           <img src="images/bildegriezt.png" alt="udens" width="250" height=150"/>
+           <img src="images/Ekrānuzņēmums 2025-02-14 135652.png" alt="vards" width="250" height="150"/>
+        </div><!-- comment -->
+           </div>
+    
+           <h3 id="ink" class="w3-padding-16 w3-text-pink">Iespējas rastrgrafikas lietotnē InkScape</h3>
+           <div class="grid-container">
+        <div>
+            <b><h4 class="w3-padding-16 w3-text-black">Mani darbiņi</h4></b>
+        </div>
+        <div class="images">
+           <img src="images/sirsninaink.png" alt="sirds" width=150 height=150/>
+           <img src="images/kubsink.png" alt="kubs" width="250" height="150"/>
+        </div>
+          </div>
+     
+</div>
+  
+   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="grupudarbs">
+    <h2 class="w3-text-black">Grupu darbs</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Kopā ar klasesbiedrenēm bija jāizveido uzņēmuma ideja. Mūsu ideja bija veidot vienreizlietojamās kafijas krūzītes, kas būtu no dabīgiem materiāliem un varētu pārstrādāties. Attēlā ir redzama  mana logo ideja.<span id="dots"> </span> <br>
+        <button onclick="myFunction()" id="myBtn">Vēl par ideju</button>
+        <span id="ideja"> Mūsu krūzītes būtu tādas kas var izturēt augstas temperatūras un nesadalītos kamēr tās lieto.Tās sadalītos dabīgi zemē, atšķirībā no plastmasas krūzītēm. </span></p>
+    <script>
+        function myFunction(){
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("ideja");
+            var btnText = document.getElementById("myBtn");
+            if (dots.style.display === "none"){
+                dots.style.display = "inline";
+                btnText.innerHTML = "Vēl par ideju";
+                moreText.style.display = "none";
+            } else {
+               dots.style.display = "none";
+               btnText.innerHTML = "Aizvērt";
+               moreText.style.display = "inline"; 
+            }
+        }
+    </script>
+    <div class="grid-container">
+        <div>
+            <h3 class="w3-padding-16 w3-text-pink">Uzņemuma logo skice</h3>
+        </div>
+        <div class="images">
+           <img src="images/logo.png" alt="logo" width="200" height="250"/>
+        </div><!-- comment -->
+           </div>
+    
+           
+           <div class="grid-container">
+        <div>
+            <h3 class="w3-padding-16 w3-text-pink">3D modelēšana</h3>
+        </div>
+        <div class="images">
+           <img src="images/3d.png" alt="gabalins" width="250" height="150"/>
+        </div>
+          </div>
+   </div><!-- comment -->
+     
+   
+    <h3  class="w3-padding-16 w3-text-pink" > Video apstrades pamatprincipi</h3>
+        <video width="350" height="270" controls>
+            <source src="images/1127(2).mp4" type="video/mp4">
+            Your browser does not support the <code>video</code> tag.
+        </video>
+   </div> 
+    
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Word" >
+      <h2 class="w3-text-black">MS Word rīku pielietošana teksta formatēšanā</h2>
+      <hr style="width:200px" class="dd9df0">
+      <p> Word tēmā es atkārtoju jau tās zināšanas, kas man bija, bet arī uzzināju jaunas. </p>
+      <div class="row">
+          <div class="column left">
+           <p class="w3-text-black">Viena no interesantākajām prasmēm, ko es ieguvu, man likās ielūgumu vai veidlapu formatēšana, ja ir dots adresātu saraksts. Tad, ievadot vajadzīgo informāciju paraugā, ir iespējams katram adresātam aizsūtīt viņam domāto jeb adresēto ielūgumu.</p>   
+          </div>
+          <div class="column right">
+             <img src="images/ielugums.png" alt="ielugums" width="350" height="400"/>
+          </div>
+      </div>
+ 
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="excel">
+      <h2 class="w3-text-black">Excel</h2>
+      <br>
+      <p> Excel tēmas laikā es iemācījos lielu daudzumu jaunu formulu un rīku,ka visus te pat nevarētu uzskaitīt. </p>
+      <div class="row">
+          <div class=" column left">
+              <p class="w3-text-black">Šeit ir viena grafika, ko es uztaisīju.</p>
+          </div>
+          <div>
+            <hr style="width:200px" class="dd9df0">
+           <img src="images/grafiks.png" alt="grafiks" width="300" height="200"/>  
+          </div>
+      </div>
+      
+  </div>
+  <p class="w3-text-black"> Ja vēlies uzzināt vairāk par ergonomisku darba vidi spied šeit &#8594 <a href="otrais.html">ergonomija</a></p> 
+
+
+    
+    
+    
+    </body>
+</html>

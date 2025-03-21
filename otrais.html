@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Ergonomiska darba vieta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/mansStils.css">
+       
+    </head>
+    <body>
+        <h1>Ergonomiska darba vieta</h1><br>
+       
+       <div class="row">
+          <div class="column left">
+              
+             
+              <br>
+                  <p> Monitors atrodas apmēram rokas stiepiena attālumā no tevis </p><br>
+                  <p>Abas kājas ir stabili uz zemes</p><br>
+                  <div class="dropdown">
+               <span>Galds ir atbilstošā augstumā</span>
+               <div class="dropdown-content">
+                 <p>Galdam ir jābūt 72-75 cm augstumā</p>
+               </div>
+             </div>
+              
+              
+          </div>
+         <div class="column middle">
+             <img src="images/sedesana.jpg" alt="sedesana" width="450" height="400">
+         </div>
+           <div class="column right">
+               <p>Mugura ir atbalstīta pret krēsla atzveltni</p> <br>
+               <p>Tu sēdi 90° grādu lenķī, un elkoņi arī ir 90°lenķī</p> <br>
+               <div class="dropdown">
+               <span>Krēsls ir piemērotā augstumā</span>
+               <div class="dropdown-content">
+               <p>Krēslam ir jābūt 38-55 cm augstumā,bet tas ir atkarīgs no cilvēka garuma</p>
+               </div>
+             </div><br>
+
+           </div>
+        </div>
+        <h3> Vai tu, kad ilgi strādā pie datora, ik pa 30 min atpūties un izstaipies?</h3>
+        <div class="container">
+        <button onclick="showMessage('Ļoti labi!')">Jā</button>
+         <button onclick="showMessage('Tas gan nav labi')">Nē</button>
+         <b><span id="response" class="showmessage"></span></b>
+        </div>
+       <script>
+        function showMessage(message) {
+            document.getElementById('response').innerText = message;
+        }
+       </script>
+    
+        <ul> 
+            <h3>izmantotie interneta resursi:</h3>
+            <li><p class="font-size:10px">https://www.uzdevumi.lv/p/datorika-skola2030/7-klase/ka-darbojas-un-atskiras-programmvadamas-ierices-un-ka-tas-drosi-parvaldit-87569/re-03dcb2df-69f9-4074-8443-f70a7e6ecca4</li><!-- comment -->
+        </ul>
+        <p> Šī ir viena no lietām ko es māku izveidot ar datorikas prasmēm, un šeit ir vēl:&#8594 <a href="index.html">portfolio</a></p>
+        
+        
+        
+    
+</html>
