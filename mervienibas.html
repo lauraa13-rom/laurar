@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+       <title>Informācijas daudzuma mērvienības</title>
+     <style>
+         body{
+          background: url('images/cipari.jpg'); 
+          font-size: 20px;
+         
+         }
+         form{
+             background-color: rgb(220, 220, 0);
+         }
+    
+    </style>
+        
+    </head>  
+<body>
+    <h1>Informācijas daudzuma mērvienības </h1>
+    
+    <form>
+    <input type="text" id="gigab">
+    <label for="gigab">GB</label>
+   
+    <br>
+    
+    <p><button type="button" onclick="izteiktMB()" >Izteikt megabaitos</button><input type="text" id="megab" readonly> MB</p>
+    <!-- comment -->
+    <p><button type="button" onclick="izteiktMiB()" > Izteikt mibibaitos</button><input type="text" id="mibib" readonly> MiB</p>
+</form><!-- comment -->
+<script>
+    function izteiktMB() {
+        let value = parseFloat(document.getElementById("gigab").value);
+        
+        let megab = value * 1024;  // 1 MB = 1024 KB
+        document.getElementById("megab").value = megab;
+    }
+    function izteiktMiB() {
+        let value = parseFloat(document.getElementById("gigab").value);
+            
+        let mibib = value *953.67431;
+            document.getElementById("mibib").value = mibib;
+        }
+
+</script>
+
+    
+    </body>
+   </html>
+    
+        
+        
+        
+  
