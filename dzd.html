@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+       <title>Gaidot dzimšanas dienu</title>
+</head>
+<body>
+<h1> Gaidot dzimšanas dienu <h1>
+<hr>
+<form>    
+<p> Ievadi pilnu datumu, kad Tev būs tuvākā dzimšanas diena</p>
+<label for="gads">Gads:</label>
+  <input type="text" id="gads" name="gads"><br>
+  <label for="menesis">Mēnesis:</label>
+  <input type="text" id="menesis" name="menesis"><br>
+ <label for="diena">Diena</label>
+  <input type="text" id="diena" name="diena">
+  <br>
+<button type="button" onclick="Dienas()" >Aprēķināt dienu skaitu līdz dzimšanas dienai</button>
+<p id="rezultats">Līdz svētkiem atlikušas <input type="text" name="dienas"> dienas :))</p>
+</form>
+<script>
+        function Dienas() {
+            let today = new Date();
+            let gads = parseInt(document.getElementById("gads").value);
+            let menesis = parseInt(document.getElementById("menesis").value) - 1;
+            let diena = parseInt(document.getElementById("diena").value);
+
+            let birthday = new Date(gads, menesis, diena);
+            let diff = birthday - today;
+
+            if (diff < 0) {
+                birthday.setFullYear(birthday.getFullYear() + 1);
+                diff = birthday - today;
+            }
+
+            let daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+            document.getElementById("rezultats").innerText = "Līdz svētkiem atlikušas " + daysLeft + " dienas : ))";
+        }
+    </script>
+
+  
+
+</body>
+</html>
+
+  
